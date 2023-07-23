@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>PhoneSimulator</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>LogPage.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- <servlet>
+    <servlet-name>Loginsecondpage</servlet-name>
+    <jsp-file>/WEB-INF/JSP/user-form.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginsecondpage</servlet-name>
+    <url-pattern>/loginsecond</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Loginpage</servlet-name>
+    <jsp-file>/WEB-INF/JSP/user-list.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Loginpage</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+   -->
+  <servlet>
+    <servlet-name>updateJsp</servlet-name>
+    <jsp-file>/WEB-INF/JSP/update.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateJsp</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Userpage</servlet-name>
+    <jsp-file>/WEB-INF/JSP/userform.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Userpage</servlet-name>
+    <url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>LoginPage</servlet-name>
+    <jsp-file>/WEB-INF/JSP/LoginPage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPage</servlet-name>
+    <url-pattern>/LogPage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertpage</servlet-name>
+    <servlet-class>edu.jsp.PhoneSimulatorServelet.InsertUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertpage</servlet-name>
+    <url-pattern>/insertform</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>defaultPage</servlet-name>
+    <servlet-class>edu.jsp.PhoneSimulatorServelet.DefaultSection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>defaultPage</servlet-name>
+    <url-pattern>/default</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Displaypage</servlet-name>
+    <servlet-class>edu.jsp.PhoneSimulatorServelet.Display</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Displaypage</servlet-name>
+    <url-pattern>/displayform</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>Deletepage</servlet-name>
+    <servlet-class>edu.jsp.PhoneSimulatorServelet.Delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deletepage</servlet-name>
+    <url-pattern>/Deletepage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>editpage</servlet-name>
+    <servlet-class>edu.jsp.PhoneSimulatorServelet.Updata</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editpage</servlet-name>
+    <url-pattern>/edit</url-pattern>
+  </servlet-mapping>
+</web-app>
