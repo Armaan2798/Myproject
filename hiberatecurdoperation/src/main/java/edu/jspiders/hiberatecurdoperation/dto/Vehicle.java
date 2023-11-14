@@ -16,8 +16,8 @@ public class Vehicle implements Serializable
 {
 	private static final long serialVersionUID = 1L;
 	
-	@GenericGenerator(name="myGen",strategy="edu.jspiders.hiberatecurdoperation.dao.MyOwnGenerator")
-	@GeneratedValue(generator="myGen")
+	//@GenericGenerator(name="myGen",strategy="edu.jspiders.hiberatecurdoperation.dao.MyOwnGenerator")
+//tq	@GeneratedValue(generator="myGen")
 	@Id
 	@Column(name="chasis_number")
 	private String chasisNumber;
